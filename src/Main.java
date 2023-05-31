@@ -12,6 +12,6 @@
 //        credit -add amount- and debit -remove amount if possible
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hello");
+        System.out.println("hello ya bo 7med");
         }
     }
