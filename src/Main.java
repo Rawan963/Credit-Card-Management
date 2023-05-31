@@ -13,5 +13,6 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("hello ya bo 7med");
+        System.out.println("hello ya bo 7med");
         }
     }
