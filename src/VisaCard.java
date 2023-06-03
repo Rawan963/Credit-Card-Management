@@ -25,21 +25,9 @@ public abstract class VisaCard {
         }
 
 
-    public void credit(double amount, int id) {
-        setBalance(this.getBalance()+amount);
-    }
+    public abstract void credit(double amount);
 
-    public void debit(double amount,int id){
-        if(amount>this.getBalance())
-            return;
-        setBalance(this.getBalance()-amount);
-    }
+    public abstract void debit(double amount);
 
 }
 
- class SilverVisaCard extends VisaCard {
-    public SilverVisaCard(int id) {
-        super("Silver", id);
-    }
-
- }
