@@ -2,22 +2,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class VisaCard {
-    private int id;
+
     private String type;
     private double balance;
 
-    public VisaCard(String type,int id){
+    public VisaCard(String type){
         this.type=type;
-        this.id=id;
         this.balance=0.0;
     }
     public String getType(){
         return type;
     }
 
-    public int getId(){
-        return id;
-    }
+
 
     public double getBalance(){
         return balance;
