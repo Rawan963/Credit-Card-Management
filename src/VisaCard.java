@@ -7,6 +7,9 @@ public abstract class VisaCard {
         return type;
     }
 
+    public int getId(){
+        return id;
+    }
 
     public abstract void CreateCard(String type,int id);
 
