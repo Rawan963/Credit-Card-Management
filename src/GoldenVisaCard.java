@@ -1,6 +1,6 @@
 public class GoldenVisaCard extends VisaCard {
-    public GoldenVisaCard() {
-        super("Gold");
+    public GoldenVisaCard(int id) {
+        super("Gold", id);
     }
 
 

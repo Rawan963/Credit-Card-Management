@@ -1,7 +1,7 @@
 public class SilverVisaCard extends VisaCard {
-    public SilverVisaCard() {
+    public SilverVisaCard(int id) {
 
-        super("Silver");
+        super("Silver",id);
     }
 
     public void credit(double amount) {

@@ -2,13 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VisaCardManager {
-    private List<VisaCard> visaCards;
+    private static List<VisaCard> visaCards;
 
     public VisaCardManager() {
         this.visaCards = new ArrayList<>();
     }
 
-    public void createCard(VisaCard VisaCardname) {
+    public static void createCard(VisaCard VisaCardname) {
         visaCards.add(VisaCardname);
         System.out.println("Visa card created ");
     }
