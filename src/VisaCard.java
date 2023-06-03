@@ -11,6 +11,10 @@ public abstract class VisaCard {
         return id;
     }
 
+    public double getBalance(){
+        return balance;
+    }
+
     public abstract void CreateCard(String type,int id);
 
     public abstract void credit(double amount,int id);
