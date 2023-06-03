@@ -3,6 +3,11 @@ public abstract class VisaCard {
     private String type;
     private double balance;
 
+    public VisaCard(String type,int id){
+        this.type=type;
+        this.id=id;
+        this.balance=0.0;
+    }
     public String getType(){
         return type;
     }
@@ -15,13 +20,26 @@ public abstract class VisaCard {
         return balance;
     }
 
-    public abstract void CreateCard(String type,int id);
+    protected void setBalance(double balance) {
+            this.balance = balance;
+        }
 
-    public abstract void credit(double amount,int id);
 
-    public abstract void debit(double amount,int id);
+    public void credit(double amount, int id) {
+        setBalance(this.getBalance()+amount);
+    }
 
-    public abstract void DeleteCard(double amount,int id);
+    public void debit(double amount,int id){
+        if(amount>this.getBalance())
+            return;
+        setBalance(this.getBalance()-amount);
+    }
+
 }
 
+ class SilverVisaCard extends VisaCard {
+    public SilverVisaCard(int id) {
+        super("Silver", id);
+    }
 
+ }
