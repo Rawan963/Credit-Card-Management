@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public abstract class VisaCard {
     private int id;
     private String type;
@@ -6,6 +8,7 @@ public abstract class VisaCard {
     public VisaCard(String type, int id){
         this.type=type;
         this.balance=0.0;
+
     }
     public String getType(){
         return type;
