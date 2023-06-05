@@ -11,7 +11,7 @@ public class SilverVisaCard extends VisaCard {
 
     public void debit(double amount) {
         if (amount > this.getBalance()) {
-            System.out.println("No Sufficient abalance ");
+            System.out.println("No Sufficient balance ");
         } else {
             setBalance(this.getBalance() - amount);
             System.out.println("Silver : " + amount + "was withdrawn successfully , new balance : " + getBalance());

@@ -7,7 +7,11 @@ public class VisaCardManager {
     public List<VisaCard> getVisaCards() {
         return visaCards;
     }
-    public VisaCard SearchVisaCard(int id){
+
+    public VisaCardManager() {
+        visaCards = new ArrayList<>();
+    }
+    public  VisaCard SearchVisaCard(int id){
         for(int i=0 ;i< visaCards.size(); i++){
             VisaCard visaCard_loop= visaCards.get( i);
             if(visaCard_loop.getID()==id)
@@ -16,12 +20,28 @@ public class VisaCardManager {
             return null;
     }
 
-        public void addVisaCard(VisaCard visaCard){
+        public void addSilverVisaCard(SilverVisaCard visaCard){
             visaCards.add(visaCard);
         }
-
-        public void deleteVisaCard(VisaCard visaCard){
+        public void addGoldenVisaCard(GoldenVisaCard visaCard){
+        visaCards.add(visaCard);
+    }
+        public  void deleteVisaCard(VisaCard visaCard){
+        visaCards.remove(visaCard);
+    }
+    public  void deleteGoldenVisaCard(GoldenVisaCard visaCard){
         visaCards.remove(visaCard);
     }
 }
 //create array that contains Visacards.
+
+
+
+
+
+
+
+
+
+
+

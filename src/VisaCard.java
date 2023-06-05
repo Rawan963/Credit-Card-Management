@@ -7,6 +7,7 @@ public abstract class VisaCard {
 
     public VisaCard(String type, int id){
         this.type=type;
+        this.id=id;
         this.balance=0.0;
 
     }
